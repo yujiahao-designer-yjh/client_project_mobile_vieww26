@@ -121,6 +121,7 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-xs);
+  overflow: hidden;
 }
 nav ul li { margin: 0; }
 nav ul li a {
@@ -131,9 +132,9 @@ nav ul li a {
   background-color: var(--um-maize);
   color: var(--um-blue);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 2vw, 1rem);
   text-decoration: none;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.25rem;
   text-align: center;
   border-radius: var(--radius);
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -269,7 +270,7 @@ figure { margin: var(--space-sm) 0 var(--space-md); }
 iframe { max-width: 100%; display: block; }
 
 main img {
-  max-width: 30rem;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: var(--radius);
